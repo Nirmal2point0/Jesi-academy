@@ -4,7 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poetry - Jesi Academy</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7e6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #ff7e5f;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #feb47b;
+            border-radius: 5px;
+        }
+        main {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .scroll-container {
+            overflow: hidden;
+            height: 300px;
+            position: relative;
+        }
+        .scrolling-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            width: 100%;
+            animation: scroll 20s linear infinite;
+        }
+        .scrolling-list li {
+            padding: 10px 0;
+            font-size: 1.2em;
+        }
+        @keyframes scroll {
+            0% {
+                top: 100%;
+            }
+            100% {
+                top: -200%;
+            }
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,19 +98,44 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="grammar.html">Grammar</a></li>
-            <li><a href="poetry.html">Poetry</a></li>
-            <li><a href="literary_works.html">Literary Works</a></li>
+            <li><a href="grammar.html">PART-A</a></li>
+            <li><a href="poetry.html">PART-B</a></li>
+            <li><a href="literary_works.html">PART-C</a></li>
+            <li><a href="biographies.html">Biographies</a></li>
+			<li><a href="General Comprehension.html">General Comprehension</a></li>
         </ul>
     </nav>
     <main>
         <h2>Poetry</h2>
-        <ul>
-            <li>Life - Henry Van Dyke</li>
-            <li>I am Every Woman - Rakhi Nariani Shirke</li>
-            <li>The Secret of the Machines - Rudyard Kipling</li>
-            <!-- Add more poems here -->
-        </ul>
+        <div class="scroll-container">
+            <ul class="scrolling-list">
+                <li>Life - Henry Van Dyke</li>
+                <li>I am Every Woman - Rakhi Nariani Shirke</li>
+                <li>The Secret of the Machines - Rudyard Kipling</li>
+                <li>The Ant and The Cricket - Adapted from Aesop’s fables</li>
+                <li>No Men are Foreign - James Falconer Kirkup</li>
+                <li>The House on Elm Street - Nadia Bush</li>
+                <li>Stopping by Woods on a Snowy Evening - Robert Frost</li>
+                <li>A Poison Tree - William Blake</li>
+                <li>On Killing a Tree - Gieve Patel</li>
+                <li>The Spider and the Fly - Mary Botham Howitt</li>
+                <li>The River - Caroline Ann Bowles</li>
+                <li>The Comet - Norman Littleford</li>
+                <li>The Stick-together Families - Edgar Albert Guest</li>
+                <li>Special Hero - Christina M. Kerschen</li>
+                <li>Making Life Worth While - George Elliot</li>
+                <li>A Thing of Beauty - John Keats</li>
+                <li>Lessons in Life - Brigette Bryant & Daniel Ho</li>
+                <li>My Computer Needs a Break - Shanthini Govindan</li>
+                <li>Your Space - David Bates</li>
+                <li>Sea Fever - John Masefield</li>
+                <li>Courage - Edgar Albert Guest</li>
+                <li>Team Work - Edgar Albert Guest</li>
+                <li>From a Railway Carriage - Robert Louis Stevenson</li>
+                <li>Indian Seasons - Nisha Dyrene</li>
+                <li>A Tragic Story - William Makepeace Thackeray</li>
+            </ul>
+        </div>
     </main>
     <footer>
         <p>Jesi Academy &copy; 2024. Motto: Strive for Excellence</p>
